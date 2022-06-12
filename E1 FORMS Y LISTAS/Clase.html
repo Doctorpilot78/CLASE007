@@ -1,0 +1,51 @@
+ <!-- <form></form>  Indica a la consola que es un formulario y dentro va a contener información para mandar a algun sitio
+<inputs> <labels>  VAN DENTRO DE LOS FORMS
+    <input>  hay varios tipos (text, number, password, email, checkbox, radiobuttom, submit, select)
+
+ <form> tiene atributos: action (indica donde enviar los datos), method (metodo para el envio de datos), target(como mostrar el resultado
+    al mandar los datos)
+target_self / target_blank  -->
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form>
+        <h2>Por favor, complete los campos</h2>
+        
+    <div>
+        <label for="nombre" >Nombre:</label> <!-- for=", le indica a que id está unido o va dirigido (está asociado con el id)-->
+        <input id="nombre" type="text" placeholder="Ingrese su nombre"> <!-- id se una uno por un elemento html, no se puede repetir en un documento html-->
+    </div>
+        <label for="superHeroe">Super Heroe Favorito:</label>
+        <select id="superHeroe">
+            <option>Batman</option>
+            <option>Superman</option>
+            <option>Robin</option>
+            <option>Mujer Maravilla</option>
+        </select>  <!-- las opciones deben estar dentro de las etiquetas select para que el código sepa cuales son. SELECT solo admite 
+        options dentro de el-->
+        
+    <div>
+        <label>¿Te gusta Harry Potter?</label>
+        <input name="harryPotter" type="radio" id="si" checked> <!-- El mismo Name si se puede repetir, pero el mismo id no-->
+        <label for="si">Si</label>
+        <input name="harryPotter" type="radio" id="no">
+        <label for="no">No</label>
+    </div>
+
+    <div>
+        <label for="descripcion">Describe como te sientes:</label>
+        <br>
+        <textarea id="descripcion" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="submit" value="Enviar">
+    </form>    
+</body>
+
+</html>
